@@ -1,3 +1,13 @@
-# hello-world
-first github program
-I'm tired because I didn't sleep much last night
+#!/usr/bin/perl
+use strict;
+use warnings/
+
+use Path::Tiny;
+use autodie; #die if problem reading or writing a file
+
+my $dir = path("/tmp"); # /tmp
+
+my $file = $dir->child("file.txt"); # /tmp/file.txt
+
+# Get a file_handle (IO::File object) you can write to
+# with a 
